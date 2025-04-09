@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/mcp" method="POST">
+    <div>
+            <label class="form-label" for="partner">username</label>
+            <input class="form-control" type="text" id="partner" name="partner[username]">
+    </div>
+
+    <div>
+        <label class="form-label" for="status">status</label>
+        <select  id="status" id="status" name="partner[status]">
+            <option value="active">active</option>
+            <option value="inactive">inactive</option>
+         </select>     
+    </div>
+      <button>submit</button>
+      </form>
+</body>
+</html>

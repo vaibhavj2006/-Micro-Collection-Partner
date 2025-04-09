@@ -1,0 +1,25 @@
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        ALL PARTNERS
+        <%for(let p of patrender){%>
+    <p>
+        <%=p.username%>
+        <%=p.status%>
+        <a href="show/<%=p._id%>">show</a>
+    
+        <form action="/mcp/show/<%= p._id %>?_method=DELETE" method="POST">
+            <button type="submit">Delete</button>
+        </form>
+        
+    </p> 
+        <%}%>
+
+        <a href="/orders">orders</a>
+    </body>
+    </html>

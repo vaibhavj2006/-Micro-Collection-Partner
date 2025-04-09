@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%for(let o of orders){  %>
+<div>
+    <%=o.name%>
+    <%=o.amount_user%>
+    <form action="/asign/<%=o._id%>" method="POST">
+        <button>place order</button>
+    </form>
+</div>   
+    <%}%>
+
+    <a href="mcp/show">partners app</a>
+</body>
+</html>
