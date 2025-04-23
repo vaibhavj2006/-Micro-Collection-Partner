@@ -1,0 +1,228 @@
+/* General Styles */
+body {
+    background-color: #f7f7f7;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Header Styles */
+.header {
+    background-color: #1d156c;
+    color: white;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+/* Card Styles */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    border: none;
+}
+
+.card-header {
+    background-color: #0071dc;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px 8px 0 0 !important;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #0071dc;
+    border-color: #0071dc;
+}
+
+.btn-primary:hover {
+    background-color: #005dab;
+    border-color: #005dab;
+}
+
+/* Form Styles */
+.form-control, .form-select {
+    border-radius: 4px;
+    padding: 8px 12px;
+}
+
+/* Status Badge Styles */
+.status-badge {
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+
+.status-active {
+    background-color: #e3f0ff;
+    color: #431bc7;
+}
+
+.status-inactive {
+    background-color: #ffe8e8;
+    color: #d32f2f;
+}
+
+/* Additional Spacing */
+.mt-4 {
+    margin-top: 1.5rem !important;
+}
+
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.mb-1 {
+    margin-bottom: 0.25rem !important;
+}
+
+/* Text Styles */
+.text-muted {
+    color: #6c757d !important;
+}
+
+.display-4 {
+    font-size: calc(1.475rem + 2.7vw);
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+/* Alert Styles */
+.alert {
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+    color: #0c5460;
+}
+
+/* Transactions Section Specific Styles */
+.transactions-section {
+    margin-top: 3rem;
+    padding: 0 15px;
+}
+
+.transactions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.transactions-title {
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.transaction-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.transaction-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-top: 3px solid var(--primary);
+}
+
+.transaction-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.transaction-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.transaction-from {
+    font-weight: 600;
+    color: var(--dark);
+    margin: 0;
+}
+
+.transaction-type {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 4px;
+    background-color: #f0f7ff;
+    color: var(--primary);
+}
+
+.transaction-details {
+    margin-top: 1rem;
+}
+
+.transaction-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.transaction-label {
+    color: #666;
+    font-weight: 500;
+}
+
+.transaction-value {
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.transaction-amount {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.transaction-date {
+    color: #888;
+    font-size: 0.85rem;
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.no-transactions {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+.no-transactions-icon {
+    font-size: 2rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.no-transactions-text {
+    color: #666;
+    margin-bottom: 0;
+}

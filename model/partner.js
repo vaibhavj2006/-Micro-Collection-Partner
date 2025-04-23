@@ -11,6 +11,9 @@ const partnerSchema=new mongoose.Schema({
     status:{
         type:String,
         
+    }, orderID:{
+        type:String,
+        
     },
     
     wallet: {

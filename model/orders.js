@@ -6,10 +6,7 @@ const orderSchema = new mongoose.Schema({
 }, 
   amount_user: { 
     type:Number 
-},   
-  amount_partner:{
-    type:Number
-  }
+}
 });
 
 module.exports = mongoose.model('Order', orderSchema);

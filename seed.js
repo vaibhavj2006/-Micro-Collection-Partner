@@ -15,15 +15,16 @@ db.once("open",()=>{
     
 })
 const seedDB=async () => {
- // await partner.deleteMany({});
+ // await Orders.deleteMany({});
     const data = [
-      { username: "shroud", status: "active" },
-      { username: "sen", status: "active" },
-      { username: "tenz", status: "active" }
+      { name: "Keyboard", amount_user: Number(1500) },
+      { name: "DELL ROG LAPTOP", amount_user:Number(50000) },
+      { name: "Dryer", amount_user: Number(2000) },
+      { name: "CHipz", amount_user:Number(200)}
     ];
   
     try {
-      await partner.insertMany(data);
+      await Orders.insertMany(data);
       console.log("Seeded successfully");
     } catch (err) {
       console.error("Error seeding data", err);

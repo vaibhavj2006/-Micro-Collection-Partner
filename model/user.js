@@ -9,11 +9,8 @@ const userSchema=new mongoose.Schema({
     balance: { 
         type: Number, 
         default: 100 
-    },
-    wallet: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'Wallet'
-      }
+    }
+   
     })
 
 module.exports=mongoose.model('Users',userSchema);

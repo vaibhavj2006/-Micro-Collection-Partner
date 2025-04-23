@@ -3,23 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Partner Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/create.css">
 </head>
 <body>
-    <form action="/mcp" method="POST">
-    <div>
-            <label class="form-label" for="partner">username</label>
-            <input class="form-control" type="text" id="partner" name="partner[username]">
-    </div>
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Partner Portal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="/mcp/show">Partners</a>
+                    <a class="nav-link" href="/orders">Orders</a>
+                    <a class="nav-link" href="/mcp">CREATE</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-    <div>
-        <label class="form-label" for="status">status</label>
-        <select  id="status" id="status" name="partner[status]">
-            <option value="active">active</option>
-            <option value="inactive">inactive</option>
-         </select>     
+    <div class="container mt-5 pt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="form-container">
+                    <form action="/mcp" method="POST" class="partner-form">
+                        <h2 class="form-title">Partner Registration</h2>
+                        
+                        <div class="form-group mb-3">
+                            <label class="form-label" for="partner">Username</label>
+                            <input class="form-control" type="text" id="partner" name="partner[username]" required>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label class="form-label" for="status">Status</label>
+                            <select class="form-select" id="status" name="partner[status]">
+                                <option value="active">Active</option>
+                                <option value="inactive">Inactive</option>
+                            </select>     
+                        </div>
+                        
+                        <button type="submit" class="submit-btn btn btn-primary w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-      <button>submit</button>
-      </form>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

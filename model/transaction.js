@@ -7,7 +7,10 @@ const transactionSchema = new mongoose.Schema({
   }, 
   to: {
      type: String
-  },  
+  },
+  partnerID: {
+    type: String
+ },   
   amount: {
     type: Number,
     required: true 
